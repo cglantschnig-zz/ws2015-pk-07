@@ -62,13 +62,24 @@
     Zusatzfragen:
     1. Welche Vorteile bieten die Java-Datenstrukturen gegenüber der eigenen
        Implementierung?
+       Java-Datenstruktur ist standardisiert --> jeder Entwickler kennt sich damit aus.
+       Und sie sind bereits fertig.
 
 */
 public class Aufgabe1 {
 
     private static boolean check(String sequenz){
         //TODO add code here
-        return false;
+        CharStack stack = new CharStack();
+        for( char character : sequenz.toCharArray() ) {
+            if (character == '(') {
+                stack.push('(');
+            }
+            else if (character == ')') {
+                stack.pop();
+            }
+        }
+        return stack.isEmpty();
     }
 
     public static void main(String[] args) {
