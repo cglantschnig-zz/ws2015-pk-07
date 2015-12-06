@@ -6,6 +6,8 @@ public class IntList {
 
         ListNode(int elem, ListNode next) {
             //TODO add code here
+            this.next = next;
+            this.elem = elem;
         }
 
         int getElem() {
@@ -18,6 +20,11 @@ public class IntList {
 
         void add(int elem) {
             //TODO add code here
+            if (this.next == null) {
+                this.next = new ListNode(elem, null);
+                return;
+            }
+            this.next.add(elem);
         }
 
         ListNode reverseR() {
@@ -39,10 +46,21 @@ public class IntList {
 
     public void add(int elem) {
         //TODO add code here
+        if (head == null) {
+            head = new ListNode(elem, null);
+        }
+        else {
+            head.add(elem);
+        };
     }
 
     public boolean search(int value) {
         //TODO add code here
+        for (ListNode node = this.head; node != null && node.getNext() != null; node = node.getNext()) {
+            if (node.getElem() == value) {
+                return true;
+            }
+        }
         return false;
     }
 
