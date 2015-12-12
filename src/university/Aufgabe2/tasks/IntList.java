@@ -38,6 +38,7 @@ public class IntList {
             //using yourself as the previous node
             node.next = next;                     //Set your next node to be the previous node
             return r;                     //Return the head of the new list
+
         }
 
         public String toString() {
@@ -95,6 +96,7 @@ public class IntList {
     public void reverseR() {
         //TODO add code here
         this.head =  this.head.reverseR(this.head, null);
+
     }
 
     public String toString() {

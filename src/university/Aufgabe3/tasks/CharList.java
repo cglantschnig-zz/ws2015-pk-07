@@ -30,6 +30,7 @@ class CharList {
             else {
                 this.next.add(elem);
             }
+
         }
 
         public String toString() {
