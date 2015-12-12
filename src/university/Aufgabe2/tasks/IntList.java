@@ -66,6 +66,22 @@ public class IntList {
 
     public void reverseI() {
         //TODO add code here
+        ListNode head = this.head;
+        ListNode last = null;
+        ListNode node = null;
+
+        this.head = null;
+
+        for (node = head; node != null && node.getNext() != last; node = node.getNext());
+        this.head = last = node;
+
+        ListNode tmp = last;
+        while (tmp == head) {
+            for (node = head; node != null && node.getNext() != last; node = node.getNext()) ;
+            tmp.next = last = node;
+            tmp = tmp.next;
+        }
+        tmp.next = null;
     }
 
     public void reverseR() {
