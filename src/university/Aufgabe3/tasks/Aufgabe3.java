@@ -23,8 +23,11 @@
 
     Zusatzfragen:
     1. Erläutern Sie die Vor- und Nachteile von Listen gegenüber Arrays.
+       Listen: einfachen einfügen
+       Array: Indexzugriff
     2. Was müsste man hinzufügen, um am Ende der Liste einen Knoten hinzuzufügen
        (Ohne Iteration durch die Liste) ?
+       eine Referenz auf das Ende, nicht nur auf head
 
 */
 public class Aufgabe3 {

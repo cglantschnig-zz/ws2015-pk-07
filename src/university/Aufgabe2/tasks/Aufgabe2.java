@@ -27,8 +27,10 @@
     Zusatzfragen:
     1. Wie entsteht die Ausgabe beim Aufruf der Methode
        System.out.println(list);
+       durch die toString methode im node
     2. Warum ist es sinnvoll beim Iterieren durch Listen sich eine Kopie des
        Zeigers auf den "head"-Knoten zu erstellen?
+       Damit man nicht den ursprünglichen head verändert
 
 */
 public class Aufgabe2 {

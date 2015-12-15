@@ -30,6 +30,8 @@
     1. Wie könnte man vorgehen, wenn man einen Knoten in den Baum einfügen
        möchte. Reicht es, den Knoten einzuhängen, oder müssen zusätzliche
        Operationen durchgeführt werden?
+       Man sucht sich die richtige Stelle und fügt das element ein.
+       Man kann neue Element immer als Blatt hinzufügen.
 
 */
 
